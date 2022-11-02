@@ -1,0 +1,40 @@
+package entities;
+
+public class Rectangle {
+	
+	private double width;
+	private double height;
+
+	public double area() {
+		return width * height;
+	}
+
+	public double perimeter() {
+		return 2 * (width + height);
+	}
+
+	public double diagonal() {
+		return Math.sqrt(width * width + height * height);
+	}
+	
+	public String toString () {
+		return "AREA = "+ String.format("%2.d", area()) + "PERIMETER = "+ String.format("%2.d", perimeter())  + "DIAGONAL = " + String.format("%2.d", diagonal())  ; 
+	}
+
+	public double getWidth() {
+		return width;
+	}
+
+	public void setWidth(double width) {
+		this.width = width;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
+}
